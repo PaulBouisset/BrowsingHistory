@@ -1,0 +1,62 @@
+<!--
+  This is the popup  HTML file. It will appear whenever the user
+  presses the extension button.  It just a plain old web page!
+  But it can communicate with the background and content scripts
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Browsing History</title>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/popup.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css" text="text/css">
+  </head>
+  <body>
+    <div class="search">
+      <img id="search_ok" src="img/icon_ok.png"/>
+      <img id="search_nope" src="img/icon_nope.png"/>
+      <input id="search-input" class="input-intro" placeholder="What is your keyword?" style="overflow: hidden; word-wrap: break-word; height: 20px;"></input>
+    </div>
+    <div class="result_search">
+      <div class="block_img">
+        <div class="hover_actions">
+          <ul class="actions_links">
+            <li>
+              <a>
+                <div class="actions_links_blockimg">
+                  <img src="img/icon_send.png"/>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div class="actions_links_blockimg">
+                  <img src="img/icon_download.png"/>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div class="actions_links_blockimg">
+                <img src="img/icon_twitter.png"/>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img class="result_search_img"/>
+      </div>
+      <a class="result_search_link" href="" target="_blank"><h1 class="result_search_title"></h1></a>
+      <p class="result_search_date"></p>
+    </div>
+
+    <div class="search_links">
+      <button  class="search_button" type="button" name="button">SEARCH</button>
+    </div>
+
+
+  </body>
+
+</html>

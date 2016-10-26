@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+.modal{
+    background: white;
+    z-index: 20000;
+    padding: 10px 15px 10px 15px;
+    color: black;
+    position: absolute;
+    min-width: 30px;
+    min-height: 20px;
+    margin-top: -30px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.modalimg{
+  min-width: 140px;
+  max-width: 200px;
+  margin: 0 auto;
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+
+}
+
+.modaltitle{
+  font-size: 0.9em;
+  color:rgb(24, 24, 24);
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+.modaldate{
+  font-size: 0.8em;
+  color:rgb(24, 24, 24);
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+#modalclose{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
